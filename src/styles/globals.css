@@ -1,0 +1,9 @@
+html, body {
+  background: #232323;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --swiper-theme-color: #e6c24d !important; 
+}
