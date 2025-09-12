@@ -15,7 +15,7 @@ const Footer = () => (
           <Image src="/logo_chile.webp" alt="logo chile" width={70} height={80} />
         </div>
         <div className={styles.footerLinks}>
-          <a href="chiapas.proyectomexico24@gmail.com" className={styles.footerContact}>
+          <a href="/contacto" className={styles.footerContact}>
             <span style={{marginRight: 8}}>Contacto</span>
           </a>
           <a href="#" className={styles.footerContact}>Privado</a>
