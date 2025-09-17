@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
+import UneteForm from '../components/UneteForm';
 
 const miembros = [
   { nombre: 'Dra. Lynda Avendaño Santana', rol: 'IP - Investigadora Principal', imagen: '/miembros/1.png', link: '#', descripcion: 'Historiadora del Arte, especialista en arte y nuevas tecnologías y decolonialidad digital. Inv. CIELA - Centro de Investigaciones Latinoamericanas de la Universidad de Chile UCH. Inv. AGI - Art, Globalization, Interculturality. Departament d\'Història de l\'Art Facultat de Geografia i Historia, Universitat de Barcelona - UB/Inv. -SU+MA Universidad y Museo de la Universidad Complutense de Madrid. (Chile/España).' },
@@ -73,8 +74,8 @@ const Unete = () => {
               aria-label={`Ver información de ${m.nombre}`}
             >
               <Image src={m.imagen} alt={m.nombre} width={140} height={140} className={styles.miembroImg} style={{borderRadius: 6, objectFit: 'cover', marginBottom: 12}} />
-              <span className={styles.miembroNombre} style={{color: '#fff', cursor: 'pointer', textDecoration: 'underline'}}>{m.nombre}</span>
-              <span className={styles.miembroRol} style={{color: '#b6ff00'}}>{m.rol}</span>
+              <span className={styles.miembroNombre}>{m.nombre}</span>
+              <span className={styles.miembroRol}>{m.rol}</span>
             </div>
           ))}
         </section>
@@ -126,11 +127,13 @@ const Unete = () => {
               >×</button>
               <Image src={miembros[modalIdx].imagen} alt={miembros[modalIdx].nombre} width={140} height={140} style={{borderRadius: 8, objectFit: 'cover', marginBottom: 18}} />
               <h2 style={{fontWeight: 700, fontSize: '1.3rem', marginBottom: 6}}>{miembros[modalIdx].nombre}</h2>
-              <div style={{color: '#b6ff00', fontWeight: 500, marginBottom: 12}}>{miembros[modalIdx].rol}</div>
+              <div style={{color: '#30D5C8', fontWeight: 500, marginBottom: 12}}>{miembros[modalIdx].rol}</div>
               <div style={{fontSize: '1.05rem', color: '#fff', marginBottom: 8}}>{miembros[modalIdx].descripcion}</div>
             </div>
           </div>
         )}
+        {/* Formulario de colaboración */}
+        <UneteForm />
       </main>
     </div>
   );

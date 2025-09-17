@@ -26,7 +26,7 @@ const Transferir = () => {
   };
 
   return (
-    <div className={styles.landingBg} style={{ minHeight: '100vh', minWidth: 0 }}>
+    <div className={styles.landingBg} style={{ minHeight: '100vh', minWidth: 0}}>
       <Navbar />
       <main style={{ padding: '60px 24px', background: 'transparent', minHeight: '100vh' }}>
         <h1 style={{ textAlign: 'center', fontWeight: 700, fontSize: '2.5rem', margin: '32px 0 12px', color: '#fff' }}>Transferir</h1>
@@ -39,7 +39,7 @@ const Transferir = () => {
             width: '100%',
             background: '#232323',
             borderRadius: 12,
-            padding: '32px 24px',
+            padding: '40px 100px',
             boxShadow: '0 2px 16px rgba(0,0,0,0.13)',
             color: '#fffbe7',
             fontFamily: 'Montserrat, Arial, sans-serif',

@@ -7,3 +7,7 @@ html, body {
 :root {
   --swiper-theme-color: #e6c24d !important; 
 }
+body, input, textarea, button, select, label {
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-size: 1.08rem;
+}

@@ -123,6 +123,7 @@
     z-index: 1;
     overflow: visible;
     color: #fff;
+    
   }
 
 .miembroOverlay {
@@ -152,9 +153,9 @@
 .miembroNombre {
   font-weight: 700;
   font-size: 1.08rem;
-  color: #222;
+  color: #fff;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: 2px;
 }
 .miembroEmail {
@@ -167,8 +168,8 @@
 }
 .miembroRol {
   font-size: 1rem;
-  color: #222;
-  text-decoration: underline;
+  color: #00bcd4;
+  text-decoration: none;
   margin-top: 2px;
 }
 .navLink:visited {
