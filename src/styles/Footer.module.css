@@ -1,0 +1,80 @@
+/* Footer.module.css - Estilos exclusivos para el Footer */
+
+.footerCustom {
+  background: #232323;
+  color: #fffbe7;
+  padding: 38px 0 0 0;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  border-top: 2px solid #C19A32;
+}
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.footerLeft h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  line-height: 1.2;
+  color: #C19A32;
+  letter-spacing: 2px;
+}
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.footerLogos {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+.footerLinks {
+  display: flex;
+  gap: 16px;
+  font-size: 1rem;
+}
+.footerContact {
+  color: #fffbe7;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+.footerContact:hover {
+  color: #C19A32;
+}
+.footerDivider {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 24px 0 0 0;
+  width: 92%;
+}
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 32px 18px 32px;
+  font-size: 0.98rem;
+  color: #ccc;
+}
+.footerIcons {
+  display: flex;
+  gap: 18px;
+}
+.footerIcons a {
+  color: #fffbe7;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  transition: opacity 0.18s, color 0.18s;
+}
+.footerIcons a:hover {
+  opacity: 1;
+  color: #C19A32;
+}

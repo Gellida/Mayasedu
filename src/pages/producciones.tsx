@@ -6,9 +6,8 @@ import styles from '../styles/Home.module.css';
 const Producciones = () => (
   <div className={styles.landingBg} style={{minHeight: '100vh'}}>
     <Navbar />
-    <main style={{maxWidth: 1100, margin: '0 auto', padding: '48px 16px 0 16px'}}>
-      <h1 style={{textAlign: 'center', fontWeight: 800, fontSize: '2.7rem', margin: '0 0 36px 0', color: '#fff'}}>
-Producciones de los niños en los colegios pilotos y sus comunidades 
+    <main style={{maxWidth: 1100, margin: '0 auto', padding: '120px 16px 0 16px'}}>
+      <h1 style={{textAlign: 'center', fontWeight: 800, fontSize: '2.7rem', margin: '0 0 36px 0', color: '#C19A32'}}>Producciones de los niños en los colegios pilotos y sus comunidades 
 
       </h1>
       <section style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 36}}>

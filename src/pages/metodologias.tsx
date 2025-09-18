@@ -6,9 +6,8 @@ import styles from '../styles/Home.module.css';
 const Metodologias = () => (
   <div className={styles.landingBg} style={{minHeight: '100vh'}}>
     <Navbar />
-    <main style={{maxWidth: 1100, margin: '0 auto', padding: '48px 16px 0 16px'}}>
-      <h1 style={{textAlign: 'center', fontWeight: 800, fontSize: '2.7rem', margin: '0 0 36px 0', color: '#fff'}}>
-        Metodologías para la educación
+    <main style={{maxWidth: 1100, margin: '0 auto', padding: '120px 16px 0 16px'}}>
+      <h1 style={{textAlign: 'center', fontWeight: 800, fontSize: '2.7rem', margin: '0 0 36px 0', color: '#C19A32'}}>        Metodologías para la educación
 
 
       </h1>

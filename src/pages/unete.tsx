@@ -60,22 +60,32 @@ const Unete = () => {
     <div className={styles.landingBg} style={{minHeight: '100vh', minWidth: 0}}>
       <Navbar />
       <main style={{padding: '60px 24px', background: 'transparent', minHeight: '100vh'}}>
-        <h1 style={{textAlign: 'center', fontWeight: 700, fontSize: '2.5rem', margin: '32px 0 12px', color: '#fff'}}>Nuestro equipo</h1>
-        <p style={{textAlign: 'center', fontSize: '1.15rem', marginBottom: 36, color: '#bdbdbd'}}>”El Verdadero salto consiste en introducir la invención a la existencia.” Frantz Fanon. Piel negra, máscaras blancas</p>
-        <section className={styles.miembrosGrid}>
+        <h1 style={{textAlign: 'center', fontWeight: 700, fontSize: '2.5rem', margin: '32px 0 12px', color: '#C19A32', letterSpacing: 1}}>Nuestro equipo</h1>
+  <p style={{textAlign: 'center', fontSize: '1.15rem', marginBottom: 36, color: '#fffbe7'}}>”El Verdadero salto consiste en introducir la invención a la existencia.”<br/> <span style={{fontSize: '1rem', color: '#e6c24d'}}>Frantz Fanon. Piel negra, máscaras blancas</span></p>
+        <section className={styles.miembrosGrid} style={{gap: 32}}>
           {miembros.map((m, idx) => (
             <div
               key={idx}
               className={styles.miembroCard}
-              style={{background: '#2d2d2d', color: '#fff', position: 'relative', overflow: 'hidden', cursor: 'pointer'}}
+              style={{
+                background: '#232323',
+                color: '#fffbe7',
+                border: '1.5px solid #b6d44b33',
+                borderRadius: 16,
+                position: 'relative',
+                overflow: 'hidden',
+                cursor: 'pointer',
+                boxShadow: '0 2px 16px rgba(0,0,0,0.13)',
+                transition: 'transform 0.15s',
+              }}
               onClick={() => setModalIdx(idx)}
               tabIndex={0}
               role="button"
               aria-label={`Ver información de ${m.nombre}`}
             >
-              <Image src={m.imagen} alt={m.nombre} width={140} height={140} className={styles.miembroImg} style={{borderRadius: 6, objectFit: 'cover', marginBottom: 12}} />
-              <span className={styles.miembroNombre}>{m.nombre}</span>
-              <span className={styles.miembroRol}>{m.rol}</span>
+              <Image src={m.imagen} alt={m.nombre} width={140} height={140} className={styles.miembroImg} style={{borderRadius: 8, objectFit: 'cover', marginBottom: 12, border: '2px solid #e6c24d'}} />
+              <span className={styles.miembroNombre} style={{color: '#e6c24d', fontWeight: 600, fontSize: '1.08rem'}}>{m.nombre}</span>
+              <span className={styles.miembroRol} style={{color: '#fffbe7', fontSize: '1rem', marginBottom: 4}}>{m.rol}</span>
             </div>
           ))}
         </section>
@@ -105,9 +115,10 @@ const Unete = () => {
                 minWidth: 320,
                 maxWidth: 420,
                 boxShadow: '0 8px 32px #000a',
-                color: '#fff',
+                color: '#fffbe7',
                 position: 'relative',
                 textAlign: 'center',
+                border: '2px solid #e6c24d',
               }}
               onClick={e => e.stopPropagation()}
             >
@@ -119,16 +130,16 @@ const Unete = () => {
                   right: 16,
                   background: 'transparent',
                   border: 'none',
-                  color: '#fff',
-                  fontSize: 24,
+                  color: '#e6c24d',
+                  fontSize: 28,
                   cursor: 'pointer',
                 }}
                 aria-label="Cerrar"
               >×</button>
-              <Image src={miembros[modalIdx].imagen} alt={miembros[modalIdx].nombre} width={140} height={140} style={{borderRadius: 8, objectFit: 'cover', marginBottom: 18}} />
-              <h2 style={{fontWeight: 700, fontSize: '1.3rem', marginBottom: 6}}>{miembros[modalIdx].nombre}</h2>
-              <div style={{color: '#30D5C8', fontWeight: 500, marginBottom: 12}}>{miembros[modalIdx].rol}</div>
-              <div style={{fontSize: '1.05rem', color: '#fff', marginBottom: 8}}>{miembros[modalIdx].descripcion}</div>
+              <Image src={miembros[modalIdx].imagen} alt={miembros[modalIdx].nombre} width={140} height={140} style={{borderRadius: 10, objectFit: 'cover', marginBottom: 18, border: '2px solid #b6d44b'}} />
+              <h2 style={{fontWeight: 700, fontSize: '1.3rem', marginBottom: 6, color: '#e6c24d'}}>{miembros[modalIdx].nombre}</h2>
+              <div style={{color: '#fffbe7', fontWeight: 500, marginBottom: 12}}>{miembros[modalIdx].rol}</div>
+              <div style={{fontSize: '1.05rem', color: '#fffbe7', marginBottom: 8}}>{miembros[modalIdx].descripcion}</div>
             </div>
           </div>
         )}

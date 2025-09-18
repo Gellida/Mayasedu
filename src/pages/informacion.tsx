@@ -27,54 +27,24 @@ const cardStyle = {
   border: '1px solid #b6d44b33',
 };
 
-const Noticias = () => (
+
+const Informacion = () => (
   <div className={styles.landingBg} style={{ minHeight: '100vh', minWidth: 0 }}>
     <Navbar />
     <main style={{ padding: '80px 0 40px 0', minHeight: '80vh' }}>
       <section style={{ maxWidth: 1150, margin: '0 auto', background: 'transparent' }}>
-        <h1 style={{ fontWeight: 700, fontSize: '2.2rem', color: '#C19A32', marginBottom: 10, textAlign: 'center', letterSpacing: 1 }}>Noticias</h1>
-        <p style={{ fontSize: '1.13rem', color: '#fffbe7', marginBottom: 24, textAlign: 'center' }}>
-          Últimas novedades y avances del proyecto.
+        <h1 style={{ color: '#e6c24d', fontSize: '2.2rem', textAlign: 'center', marginBottom: 10, fontFamily: 'Montserrat, Arial, sans-serif', letterSpacing: 1 }}>Información General del Proyecto</h1>
+        <p style={{ color: '#fffbe7', fontSize: '1.18rem', textAlign: 'center', margin: '0 auto 24px auto', maxWidth: 700 }}>
+          Este proyecto busca transformar la educación desde una perspectiva decolonial, integrando lenguas, culturas y tecnologías abiertas para el aprendizaje y la creatividad de niñas, niños y docentes mayas.
         </p>
-          <section style={{
-            background: '#e6c24d',
-            borderRadius: 16,
-            padding: 32,
-            margin: '0 auto 48px auto',
-            maxWidth: 800,
-            boxShadow: '0 2px 12px #0001'
-          }}>
-            <h2 style={{ color: '#232323', fontWeight: 700, fontSize: '1.5rem', marginBottom: 12, textAlign: 'center' }}>
-              ¡Inicia el Curso de Formación Educativa para el Profesorado del Estado de Chiapas!
-            </h2>
-            <p style={{ color: '#232323', fontSize: '1.13rem', marginBottom: 18, textAlign: 'center' }}>
-              <b>Nuevas metodologías pedagógicas y lingüísticas, tecnologías abiertas y procesos artísticos dirigidos a estudiantes de ascendencia maya.</b>
-            </p>
-            <p style={{ color: '#232323', fontSize: '1.07rem', marginBottom: 10 }}>
-              El próximo <b>20 de septiembre de 2025</b> inicia el curso certificado por CIELA – Universidad de Chile, dirigido a profesoras y profesores de Chiapas interesados en metodologías educativas decoloniales, tecnologías abiertas y procesos artísticos para el fortalecimiento de lenguas y culturas mayas.
-            </p>
-            <p style={{ color: '#232323', fontSize: '1.07rem', marginBottom: 10 }}>
-              El curso se desarrollará hasta el <b>18 de julio de 2026</b> e incluye sesiones teóricas y prácticas, talleres, y la creación de instrumentos pedagógicos y artísticos. Las inscripciones están abiertas hasta el 19 de septiembre.
-            </p>
-            <p style={{ color: '#232323', fontSize: '1.07rem', marginBottom: 10 }}>
-              <b>Inscríbete aquí:</b> <a href="https://docs.google.com/forms/d/e/1FAIpQLSf39CA-x3mflvtWw_D1Ba2QJ6sc4OKrJQ2FH6NXF_z1pFb3Qg/viewform" target="_blank" rel="noopener" style={{ color: '#ff2200', textDecoration: 'underline' }}>Formulario de inscripción</a>
-            </p>
-            <p style={{ color: '#232323', fontSize: '1.07rem', marginBottom: 10 }}>
-              <b>Proyecto:</b> MAYASEDU. Nuevas metodologías pedagógicas y lingüísticas, tecnologías abiertas y procesos artísticos dirigidos a estudiantes de ascendencia maya. Comunidades zapatistas y otros. Chiapas, México.
-            </p>
-            <p style={{ color: '#232323', fontSize: '1.07rem', marginBottom: 10 }}>
-              <b>Investigadora Principal:</b> Lynda Avendaño Santana<br/>
-              <b>Co-Investigador Principal:</b> Luis Alberto Roque Vázquez<br/>
-              Equipo de Investigadores Proyecto MAYASEDU
-            </p>
-            <p style={{ color: '#232323', fontSize: '1.07rem', marginBottom: 0 }}>
-              Más información: <a href="https://www.mayasedu.com" target="_blank" rel="noopener" style={{ color: '#ff2200', textDecoration: 'underline' }}>www.mayasedu.com</a>
-            </p>
-          </section>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginBottom: 36 }}>
+          <a href="/noticias" style={{ background: '#e6c24d', color: '#232323', borderRadius: 8, padding: '10px 24px', fontWeight: 600, textDecoration: 'none', fontSize: '1.08rem', boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}>📰 Noticias</a>
+          <a href="/cronograma" style={{ background: '#e6c24d', color: '#232323', borderRadius: 8, padding: '10px 24px', fontWeight: 600, textDecoration: 'none', fontSize: '1.08rem', boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}>📅 Cronograma</a>
+        </div>
         <div style={gridStyle}>
           <div style={cardStyle}>
-            <h2 style={{ color: '#e6c24d', fontSize: '1.25rem', marginBottom: 10 }}>Objetivos del Proyecto</h2>
-            <ul style={{ color: '#fffbe7', fontSize: '1.07rem', paddingLeft: 20, marginBottom: 0 }}>
+            <h2 style={{ color: '#e6c24d', fontSize: '1.35rem', marginBottom: 10 }}>🎯 Objetivos del Proyecto</h2>
+            <ul style={{ color: '#fffbe7', fontSize: '1.07rem', paddingLeft: 20, marginBottom: 0, lineHeight: 1.7 }}>
               <li>Desarrollar metodologías pedagógicas decoloniales situadas asociadas a las decolonialidades data digitales que respeten y potencien desde la lingüística las lenguas y culturas mayas, tanto en niños como profesores, y que posibiliten por parte de los niños el adecuado aprendizaje del español.</li>
               <li>Fomentar un diálogo intercultural y comunitario en la enseñanza de niñas y niños de primero a sexto grado.</li>
               <li>Integrar perspectivas decoloniales, filosóficas, artísticas, ecofeministas y tecnológicas libres y abiertas en la formación docente.</li>
@@ -88,8 +58,8 @@ const Noticias = () => (
             </ul>
           </div>
           <div style={cardStyle}>
-            <h2 style={{ color: '#e6c24d', fontSize: '1.25rem', marginBottom: 10 }}>Metodología de Trabajo</h2>
-            <ul style={{ color: '#fffbe7', fontSize: '1.07rem', paddingLeft: 20, marginBottom: 0 }}>
+            <h2 style={{ color: '#e6c24d', fontSize: '1.35rem', marginBottom: 10 }}>🛠️ Metodología de Trabajo</h2>
+            <ul style={{ color: '#fffbe7', fontSize: '1.07rem', paddingLeft: 20, marginBottom: 0, lineHeight: 1.7 }}>
               <li>Sesiones de clase, charlas, talleres prácticos y aplicación en escuelas piloto.</li>
               <li>Introducción a fundamentos teóricos: lingüística, filosofía de la liberación, decolonialidad, artes críticas y lúdicas.</li>
               <li>Formación en herramientas lingüísticas para niños y profesores (maya y español).</li>
@@ -102,8 +72,8 @@ const Noticias = () => (
             </ul>
           </div>
           <div style={cardStyle}>
-            <h2 style={{ color: '#e6c24d', fontSize: '1.25rem', marginBottom: 10 }}>Resultados Esperados</h2>
-            <ul style={{ color: '#fffbe7', fontSize: '1.07rem', paddingLeft: 20, marginBottom: 0 }}>
+            <h2 style={{ color: '#e6c24d', fontSize: '1.35rem', marginBottom: 10 }}>🌱 Resultados Esperados</h2>
+            <ul style={{ color: '#fffbe7', fontSize: '1.07rem', paddingLeft: 20, marginBottom: 0, lineHeight: 1.7 }}>
               <li>Elaboración de actividades didácticas aplicando los conocimientos adquiridos en cada sesión.</li>
               <li>Presentación de actividades en sesiones colectivas con apoyo audiovisual.</li>
               <li>Retroalimentación de investigadores y colegas para mejorar instrumentos educativos.</li>
@@ -117,4 +87,4 @@ const Noticias = () => (
   </div>
 );
 
-export default Noticias;
+export default Informacion;

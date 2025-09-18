@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,26 +31,25 @@ import Footer from 'components/Footer';
                                         spaceBetween={0}
                                         slidesPerView={1}
                                         loop={true}
-                                        autoplay={{ delay: 3500, disableOnInteraction: false }}
-                                        style={{ width: '100%', height: '100%' }}
+                                        autoplay={{ delay: 4000, disableOnInteraction: false }}
+                                        style={{ width: '100%', height: '100%'}}
                                     >
                                         {/* Swiper navigation buttons will be rendered automatically */}
                                         <SwiperSlide>
                                             <div className={styles.sliderBg}>
                                                 <div className={styles.sliderImgWrapper}>
-                                                    <Image src="/1.jpeg" alt="Slider 1" fill style={{objectFit:'contain'}} className={styles.sliderImg} />
-                                                </div>
-                                                <div className={styles.sliderOverlay}></div>
+                                                    <Image src="/slide2.jpeg" alt="Slider 1" fill style={{objectFit:'cover'}} className={styles.sliderImg} priority />
+                                                </div>  
                                             </div>
                                             <div className={styles.sliderContent}>
-                                                <h1 className={styles.sliderTitle}>Bienvenido a MAYAS EDU</h1>
+                                                <h1 className={styles.sliderTitle}>Bienvenido a MAYA SEDU</h1>
                                                 <p className={styles.sliderText}>Nuevas metodologías pedagógicas y lingüísticas, tecnologías abiertas y procesos artísticos dirigidos a estudiantes de ascendencia maya. Comunidades zapatistas y otros. Chiapas, México.</p>
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <div className={styles.sliderBg}>
                                                 <div className={styles.sliderImgWrapper}>
-                                                    <Image src="/slide2.jpeg" alt="Slider 2" fill style={{objectFit:'contain'}} className={styles.sliderImg} />
+                                                    <Image src="/1.jpeg" alt="Slider 2" fill style={{objectFit:'cover'}} className={styles.sliderImg} />
                                                 </div>
                                                 <div className={styles.sliderOverlay}></div>
                                             </div>
@@ -63,7 +61,7 @@ import Footer from 'components/Footer';
                                         <SwiperSlide>
                                             <div className={styles.sliderBg}>
                                                 <div className={styles.sliderImgWrapper}>
-                                                    <Image src="/slider3.jpeg" alt="Slider 3" fill style={{objectFit:'contain'}} className={styles.sliderImg} />
+                                                    <Image src="/slider3.jpeg" alt="Slider 3" fill style={{objectFit:'cover'}} className={styles.sliderImg} />
                                                 </div>
                                                 <div className={styles.sliderOverlay}></div>
                                             </div>
@@ -77,14 +75,16 @@ import Footer from 'components/Footer';
                 <main className={styles.sectionsContainer}>
                     {/* Hero principal */}
                     <section className={styles.heroSection}>
-                        <div className={styles.heroLeft}>
-                            <Image src="/index1.jpeg" alt="Hero" width={350 } height={500} className={styles.heroImg} />
-                        </div>
-                        <div className={styles.heroRight}>
-                            <h1 className={styles.heroTitle}>Maya sedu</h1>
+                        <div className={styles.heroContent}>
+                            <h1 className={styles.heroTitle}>Nuevas metodologías lingüísticas , educativas y  procesos artísticos dirigidos a estudiantes de ascendencia maya (Comunidades Zapatistas y otros, Chiapas,  México). </h1>
                             <p className={styles.heroText}>
-                                Es un proyecto de mejoramiento lingüístico y educativo, con implementación de procesos artísticos, que surge a partir del llamado realizado por las comunidades mayas de Chiapas, de las zonas Zapatistas, y otros, y de profesores de colegios de primarias.
+Nuevas metodologías educativas , lingüísticas y procesos artísticos dirigidos a estudiantes de ascendencia maya (Chiapas, México). Su objetivo es  desarrollar un proyecto activo, dialogante, afectuoso, empático  en cooperación con las  comunidades de ascendencia maya de Chiapas,  de las zonas Zapatistas, y otros, por tanto, con los Comités de padres de familia, los profesores y los niños para  la formación educativa de los niños/as de primaria, sobre todo en lengua española y profundización de sus lenguas  originarias , promoviendo dichos procesos a través , entre otros, de las artes,  además de  fomentar el desarrollo de las  artes visuales  a partir de las  culturas  locales en concomitancias con artistas respetuosos de ellas. 
+Este proyecto promueve la transferencia tecnológica , la cultura libre  y la innovación de Inteligencia artificial, centrada entre otros en los lenguajes y hablas mayas y el español.  <br /><br />
+Somos un equipo multidisciplinar compuesto por profesionales de distintas disciplinas, entre los cuales se cuentan profesores  de distintas  universidades de Europa, África y  Latinoamérica , se incluyen profesores de enseñanza en educación primaria del Estado de Chiapas, investigadores con formación en lingüística, pedagogía, artes, música e ingeniería.
+Este proyecto cuenta  con el apoyo del Jefe del Sector 14. Responsable de 70 colegios o centros de trabajo y de Supervisores escolares de las zonas 93 , 155, y de  profesores  de dichas  zonas, responsables ellos de  colegios o centros de trabajo, y de los Comités de padres de familia. Y cuenta con el apoyo de  comunidades como las comunidades de Simojovel, el Salto de Agua, Tila y Palenque. 
+Los beneficiados con este proyecto son los 96 colegios, como aquellos profesores y escuelas que se unan a este proyecto <br /> <br />Las principales áreas del proyecto son:
                             </p>
+                            
                         </div>
                     </section>
                     {/* Cuadros tipo grid para las "páginas" */}
